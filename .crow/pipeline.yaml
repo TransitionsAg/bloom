@@ -1,0 +1,63 @@
+variables:
+  - &node_image 'reg.devxy.io/docker.io/library/node:23-alpine'
+  - &when_path
+    - 'src/**'
+    - 'static/**'
+    - '*.config.*'
+    - 'package.json'
+    - 'pnpm-lock.yaml'
+    - 'tsconfig.json'
+    - '.crow/**'
+
+when:
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+  - event: pull_request
+  - event: tag
+
+steps:
+  install:
+    image: *node_image
+    commands:
+      - corepack enable
+      - pnpm install --frozen-lockfile
+
+  check:
+    depends_on:
+      - install
+    image: *node_image
+    commands:
+      - corepack enable
+      - pnpm check
+
+  test:
+    depends_on:
+      - install
+    image: *node_image
+    commands:
+      - corepack enable
+      - pnpm test
+
+  build:
+    depends_on:
+      - install
+    image: *node_image
+    commands:
+      - corepack enable
+      - pnpm build
+
+  publish:
+    depends_on:
+      - check
+      - test
+      - build
+    image: *node_image
+    commands:
+      - corepack enable
+      - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+      - pnpm publish --no-git-checks
+    environment:
+      NPM_TOKEN:
+        from_secret: npm_token
+    when:
+      event: tag

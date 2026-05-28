@@ -14,4 +14,4 @@
   const { class: className, ...restProps }: Props = $props()
 </script>
 
-<div {...restProps} role="separator" aria-orientation="vertical" class={variants({ class: className })} />
+<div {...restProps} role="separator" aria-orientation="vertical" class={variants({ class: className })}></div>

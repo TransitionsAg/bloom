@@ -57,7 +57,7 @@
       {/each}
     </Toolbar.Group>
 
-    <div class="mx-1 h-7 w-px bg-border" aria-hidden="true"></div>
+    <Toolbar.Separator />
 
     <Toolbar.Group type="single" value="left" aria-label="Text alignment">
       {#each alignmentItems as item (item.value)}
@@ -67,7 +67,7 @@
       {/each}
     </Toolbar.Group>
 
-    <div class="mx-1 h-7 w-px bg-border" aria-hidden="true"></div>
+    <Toolbar.Separator />
 
     <Toolbar.Button>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -113,7 +113,7 @@
       {/each}
     </Toolbar.Group>
 
-    <div class="mx-1 h-7 w-px bg-border" aria-hidden="true"></div>
+    <Toolbar.Separator />
 
     <Toolbar.Button disabled>Publish</Toolbar.Button>
   </Toolbar.Root>

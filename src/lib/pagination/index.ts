@@ -1,5 +1,6 @@
 import NextButton from "./pagination-next-button.svelte"
 import Page from "./pagination-page.svelte"
+import Pages from "./pagination-pages.svelte"
 import PrevButton from "./pagination-prev-button.svelte"
 import Root from "./pagination-root.svelte"
 
@@ -8,6 +9,7 @@ const Pagination = Object.assign(Root, {
   PrevButton,
   NextButton,
   Page,
+  Pages,
 })
 
 export {
@@ -16,4 +18,5 @@ export {
   Page,
   PrevButton,
   Root,
+  Pages,
 }

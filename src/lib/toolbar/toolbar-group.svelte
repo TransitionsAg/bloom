@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "flex items-center gap-1 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    base: "flex items-center data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
   })
 
   export type Props = ComponentProps<typeof Toolbar.Group>
@@ -18,5 +18,6 @@
   {...restProps}
   {disabled}
   data-disabled={disabled ? "" : undefined}
+  data-bloom-toolbar-group
   class={variants({ class: className })}
 />

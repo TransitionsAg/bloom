@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "flex w-fit flex-col gap-3 text-foreground data-[orientation=vertical]:flex-row data-[disabled]:text-disabled-foreground",
+    base: "flex w-fit flex-row gap-3 inset-ring-border rounded-lg text-foreground data-[orientation=vertical]:flex-row data-[disabled]:text-disabled-foreground",
   })
 
   export type Props = ComponentProps<typeof Pagination.Root>

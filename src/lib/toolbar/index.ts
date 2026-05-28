@@ -3,6 +3,7 @@ import Button from "./toolbar-button.svelte";
 import Link from "./toolbar-link.svelte";
 import Group from "./toolbar-group.svelte";
 import GroupItem from "./toolbar-group-item.svelte";
+import Separator from "./toolbar-separator.svelte";
 
 const Toolbar = Object.assign(Root, {
 	Root,
@@ -10,6 +11,7 @@ const Toolbar = Object.assign(Root, {
 	Link,
 	Group,
 	GroupItem,
+	Separator,
 });
 
-export { Toolbar, Root, Button, Link, Group, GroupItem };
+export { Toolbar, Root, Button, Link, Group, GroupItem, Separator };

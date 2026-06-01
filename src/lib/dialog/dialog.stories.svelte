@@ -34,7 +34,7 @@
         <label class="grid gap-2 text-sm font-semibold text-foreground">
           Email address
           <input
-            class="h-12 rounded border-2 border-border bg-field px-4 text-[15px] font-medium text-field-foreground transition-all placeholder:text-caption hover:bg-field-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+            class="h-12 rounded border-2 border-border bg-field px-4 text-[15px] font-medium text-field-foreground transition-all placeholder:text-caption hover:bg-field-accent focus-visible:border-primary focus-visible:outline-none"
             placeholder="teammate@example.com"
             type="email"
           />
@@ -43,7 +43,7 @@
         <label class="grid gap-2 text-sm font-semibold text-foreground">
           Role
           <select
-            class="h-12 rounded border-2 border-border bg-field px-4 text-[15px] font-medium text-field-foreground transition-all hover:bg-field-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+            class="h-12 rounded border-2 border-border bg-field px-4 text-[15px] font-medium text-field-foreground transition-all hover:bg-field-accent focus-visible:border-primary focus-visible:outline-none"
           >
             <option>Editor</option>
             <option>Viewer</option>

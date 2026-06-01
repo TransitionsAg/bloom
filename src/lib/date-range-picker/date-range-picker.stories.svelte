@@ -30,7 +30,7 @@
 {/snippet}
 
 {#snippet DateFields()}
-  <div class="flex min-h-12 w-full items-center gap-1 rounded-lg px-2 text-foreground transition-colors focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-focus">
+  <div class="flex min-h-12 w-full items-center gap-1 rounded-lg px-2 text-foreground transition-colors">
     {#each inputTypes as type (type)}
       <DateRangePicker.Input {type}>
         {#snippet children({ segments })}

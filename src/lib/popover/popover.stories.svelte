@@ -21,7 +21,7 @@
           <label class="flex items-center justify-between gap-4">
             <span class="text-muted-foreground">Width</span>
             <input
-              class="h-10 w-24 rounded bg-field px-3 text-right text-field-foreground outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+              class="h-10 w-24 rounded border-2 border-border bg-field px-3 text-right text-field-foreground outline-none transition-colors focus-visible:border-primary"
               type="number"
               value="1280"
             />
@@ -29,7 +29,7 @@
           <label class="flex items-center justify-between gap-4">
             <span class="text-muted-foreground">Height</span>
             <input
-              class="h-10 w-24 rounded bg-field px-3 text-right text-field-foreground outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+              class="h-10 w-24 rounded border-2 border-border bg-field px-3 text-right text-field-foreground outline-none transition-colors focus-visible:border-primary"
               type="number"
               value="720"
             />

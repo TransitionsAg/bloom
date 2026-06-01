@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "h-12 w-full border-0 border-b-2 border-separator bg-background px-4 text-sm text-foreground placeholder:text-caption focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-focus disabled:cursor-not-allowed disabled:bg-disabled disabled:text-disabled-foreground",
+    base: "h-12 w-full border-0 border-b-2 border-separator bg-background px-4 text-sm text-foreground transition-colors placeholder:text-caption focus-visible:border-primary focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-disabled disabled:text-disabled-foreground",
   })
 
   export type Props = ComponentProps<typeof Command.Input>

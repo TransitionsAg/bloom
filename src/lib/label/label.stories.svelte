@@ -40,7 +40,7 @@
       id="email"
       type="email"
       placeholder="name@example.com"
-      class="h-12 rounded border-2 border-border bg-field px-4 text-sm text-foreground placeholder:text-caption transition-all hover:bg-field-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+      class="h-12 rounded border-2 border-border bg-field px-4 text-sm text-foreground placeholder:text-caption transition-all hover:bg-field-accent focus-visible:border-primary focus-visible:outline-none"
     />
   </div>
 </Story>

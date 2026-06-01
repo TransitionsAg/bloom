@@ -13,6 +13,6 @@
   const { class: className, children, ...restProps }: Props = $props()
 </script>
 
-<div {...restProps} class={variants({ class: className })}>
+<div data-bloom-card-header {...restProps} class={variants({ class: className })}>
   {@render children?.()}
 </div>

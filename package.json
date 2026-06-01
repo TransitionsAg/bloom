@@ -1,7 +1,14 @@
 {
-	"name": "bloom",
+	"name": "@transitionsag/bloom",
 	"version": "0.0.1",
 	"packageManager": "pnpm@11.4.0",
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TransitionsAg/bloom"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && pnpm run prepack",
@@ -45,6 +52,7 @@
 		"./bits-config": "./dist/bits-config/index.js",
 		"./button": "./dist/button/index.js",
 		"./calendar": "./dist/calendar/index.js",
+		"./card": "./dist/card/index.js",
 		"./checkbox": "./dist/checkbox/index.js",
 		"./collapsible": "./dist/collapsible/index.js",
 		"./combobox": "./dist/combobox/index.js",
@@ -56,6 +64,7 @@
 		"./date-range-picker": "./dist/date-range-picker/index.js",
 		"./dialog": "./dist/dialog/index.js",
 		"./dropdown-menu": "./dist/dropdown-menu/index.js",
+		"./input": "./dist/input/index.js",
 		"./label": "./dist/label/index.js",
 		"./link-preview": "./dist/link-preview/index.js",
 		"./menubar": "./dist/menubar/index.js",

@@ -50,6 +50,9 @@ jobs:
     needs: ci
     if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v6
 
@@ -73,6 +76,9 @@ jobs:
             ${{ runner.os }}-pnpm-
 
       - run: pnpm install --frozen-lockfile
+
+      - name: Set package version from tag
+        run: pnpm pkg set version="${GITHUB_REF_NAME#v}"
 
       - run: pnpm build
 

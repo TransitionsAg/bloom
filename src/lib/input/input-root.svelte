@@ -10,7 +10,7 @@
 </script>
 
 <script lang="ts">
-  const { class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), class: className, ...restProps }: Props = $props()
 </script>
 
-<input {...restProps} class={variants({ class: className })} />
+<input bind:value {...restProps} class={variants({ class: className })} />

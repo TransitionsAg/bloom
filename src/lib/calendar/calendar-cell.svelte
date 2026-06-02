@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "relative size-10 p-0 text-center text-sm",
+    base: "relative size-10 p-0 text-center text-sm font-medium",
   })
 
   export type Props = ComponentProps<typeof Calendar.Cell>

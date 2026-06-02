@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "select-none text-sm font-semibold leading-none text-foreground peer-disabled:cursor-not-allowed peer-disabled:text-disabled-foreground peer-disabled:opacity-70",
+    base: "select-none typo-sm leading-none text-foreground peer-disabled:cursor-not-allowed peer-disabled:text-disabled-foreground peer-disabled:opacity-70",
   })
 
   export type Props = ComponentProps<typeof Label.Root>

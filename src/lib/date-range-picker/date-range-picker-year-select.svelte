@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "rounded border-2 border-border bg-background px-3 py-2 text-sm font-semibold text-foreground transition-colors focus-visible:border-primary focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
+    base: "rounded border-2 border-border bg-background px-3 py-2 typo-sm text-foreground transition-colors focus-visible:border-primary focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
   })
 
   export type Props = ComponentProps<typeof DateRangePicker.YearSelect>

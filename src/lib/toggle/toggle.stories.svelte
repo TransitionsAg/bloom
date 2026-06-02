@@ -76,7 +76,7 @@
     <Toggle.Root id="toggle-email" aria-labelledby="toggle-email-label">
       {@render icon("M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z")}
     </Toggle.Root>
-    <label for="toggle-email" class="grid gap-1 text-sm leading-none text-foreground">
+    <label for="toggle-email" class="grid gap-1 text-sm font-medium leading-none text-foreground">
       <span id="toggle-email-label" class="font-semibold">Email notifications</span>
       <span class="text-muted-foreground">Receive updates via email.</span>
     </label>

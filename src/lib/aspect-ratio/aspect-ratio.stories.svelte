@@ -26,13 +26,13 @@
   <div class="w-full max-w-3xl">
     <AspectRatio.Root {...args}>
       <div class="flex h-full w-full flex-col justify-between bg-gradient-to-br from-primary via-secondary to-muted p-6 text-primary-foreground">
-        <div class="flex items-center justify-between gap-4 text-sm font-semibold uppercase tracking-[0.18em]">
+        <div class="flex items-center justify-between gap-4 typo-sm uppercase tracking-[0.18em]">
           <span>Bloom Field Notes</span>
           <span>16:9</span>
         </div>
         <div class="max-w-md space-y-3">
           <p class="text-3xl font-semibold leading-none sm:text-5xl">Aspect-safe media frame</p>
-          <p class="text-sm text-primary-foreground/80 sm:text-base">
+          <p class="text-sm font-medium text-primary-foreground/80 sm:text-base">
             Content keeps its proportions while the wrapper carries Bloom surface, border, and
             radius styling.
           </p>
@@ -52,7 +52,7 @@
           <span class="text-lg font-semibold">1:1</span>
         </div>
       </AspectRatio.Root>
-      <p class="text-sm text-muted-foreground">Square preview</p>
+      <p class="text-sm font-medium text-muted-foreground">Square preview</p>
     </div>
     <div class="space-y-2">
       <AspectRatio.Root ratio={4 / 3}>
@@ -60,7 +60,7 @@
           <span class="text-lg font-semibold">4:3</span>
         </div>
       </AspectRatio.Root>
-      <p class="text-sm text-muted-foreground">Editorial card</p>
+      <p class="text-sm font-medium text-muted-foreground">Editorial card</p>
     </div>
     <div class="space-y-2">
       <AspectRatio.Root ratio={16 / 9}>
@@ -68,7 +68,7 @@
           <span class="text-lg font-semibold">16:9</span>
         </div>
       </AspectRatio.Root>
-      <p class="text-sm text-muted-foreground">Wide media</p>
+      <p class="text-sm font-medium text-muted-foreground">Wide media</p>
     </div>
   </div>
 </Story>
@@ -78,7 +78,7 @@
     <div class="relative h-full w-full overflow-hidden bg-surface">
       <div class="absolute inset-0 bg-gradient-to-br from-primary via-surface to-secondary"></div>
       <div class="absolute inset-x-8 bottom-8 rounded-lg bg-background/80 p-5 text-foreground inset-ring-2 inset-ring-border">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        <p class="typo-sm uppercase tracking-[0.18em] text-muted-foreground">
           Placeholder
         </p>
         <p class="mt-2 text-2xl font-semibold">No network image required</p>

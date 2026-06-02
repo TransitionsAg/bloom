@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "text-sm font-semibold text-muted-foreground data-[disabled]:opacity-50",
+    base: "typo-sm text-muted-foreground data-[disabled]:opacity-50",
   })
 
   export type Props = ComponentProps<typeof Checkbox.GroupLabel>

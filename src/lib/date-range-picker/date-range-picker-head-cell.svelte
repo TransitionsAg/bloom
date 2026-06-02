@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "flex size-10 items-center justify-center text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+    base: "flex size-10 items-center justify-center typo-xs uppercase tracking-[0.08em] text-muted-foreground",
   })
 
   export type Props = ComponentProps<typeof DateRangePicker.HeadCell>

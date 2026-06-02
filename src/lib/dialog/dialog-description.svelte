@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "text-sm leading-6 text-muted-foreground",
+    base: "text-sm font-medium leading-6 text-muted-foreground",
   })
 
   export type Props = ComponentProps<typeof Dialog.Description>

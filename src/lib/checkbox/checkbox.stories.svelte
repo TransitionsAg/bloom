@@ -12,7 +12,7 @@
 {#snippet row(id: string, label: string, description: string, props: Record<string, unknown> = {})}
   <div class="flex items-start gap-3">
     <Checkbox.Root {id} aria-labelledby={`${id}-label`} {...props} />
-    <label for={id} class="grid gap-1 text-sm leading-none text-foreground">
+    <label for={id} class="grid gap-1 text-sm font-medium leading-none text-foreground">
       <span id={`${id}-label`} class="font-semibold">{label}</span>
       <span class="text-muted-foreground">{description}</span>
     </label>
@@ -50,6 +50,6 @@
         {/if}
       {/snippet}
     </Checkbox.Root>
-    <label for="checkbox-custom" class="text-sm font-semibold text-foreground">Use a custom inline SVG indicator</label>
+    <label for="checkbox-custom" class="typo-sm text-foreground">Use a custom inline SVG indicator</label>
   </div>
 </Story>

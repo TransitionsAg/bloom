@@ -12,8 +12,8 @@
 {#snippet Tip(label: string, detail: string)}
   <Tooltip.Portal>
     <Tooltip.Content sideOffset={8}>
-      <p class="text-sm font-semibold">{label}</p>
-      <p class="mt-1 text-xs leading-5 text-muted-foreground">{detail}</p>
+      <p class="typo-sm">{label}</p>
+      <p class="mt-1 text-xs font-medium leading-5 text-muted-foreground">{detail}</p>
       <Tooltip.Arrow width={10} height={5} />
     </Tooltip.Content>
   </Tooltip.Portal>
@@ -35,7 +35,7 @@
     <div class="grid w-fit grid-cols-3 gap-3">
       <div></div>
       <Tooltip.Root>
-        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 text-sm font-semibold hover:bg-muted hover:text-foreground">
+        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 typo-sm hover:bg-muted hover:text-foreground">
           Top
         </Tooltip.Trigger>
         <Tooltip.Portal>
@@ -45,18 +45,18 @@
       <div></div>
 
       <Tooltip.Root>
-        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 text-sm font-semibold hover:bg-muted hover:text-foreground">
+        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 typo-sm hover:bg-muted hover:text-foreground">
           Left
         </Tooltip.Trigger>
         <Tooltip.Portal>
           <Tooltip.Content side="left" sideOffset={8}>Placed to the left.</Tooltip.Content>
         </Tooltip.Portal>
       </Tooltip.Root>
-      <div class="rounded-lg border-2 border-border bg-background px-6 py-3 text-center text-sm font-semibold text-muted-foreground">
+      <div class="rounded-lg border-2 border-border bg-background px-6 py-3 text-center typo-sm text-muted-foreground">
         Trigger sides
       </div>
       <Tooltip.Root>
-        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 text-sm font-semibold hover:bg-muted hover:text-foreground">
+        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 typo-sm hover:bg-muted hover:text-foreground">
           Right
         </Tooltip.Trigger>
         <Tooltip.Portal>
@@ -66,7 +66,7 @@
 
       <div></div>
       <Tooltip.Root>
-        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 text-sm font-semibold hover:bg-muted hover:text-foreground">
+        <Tooltip.Trigger class="rounded border-2 border-border bg-surface px-4 py-2 typo-sm hover:bg-muted hover:text-foreground">
           Bottom
         </Tooltip.Trigger>
         <Tooltip.Portal>

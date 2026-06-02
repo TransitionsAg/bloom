@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "flex w-full items-center justify-center px-4 py-8 text-sm text-muted-foreground",
+    base: "flex w-full items-center justify-center px-4 py-8 text-sm font-medium text-muted-foreground",
   })
 
   export type Props = ComponentProps<typeof Command.Loading>

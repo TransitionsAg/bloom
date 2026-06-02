@@ -59,7 +59,7 @@
 <Story name="Default" asChild>
   <ContextMenu.Root>
     <ContextMenu.Trigger
-      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border text-sm text-caption"
+      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border typo-caption"
     >
       Right-click here
     </ContextMenu.Trigger>
@@ -78,7 +78,7 @@
 <Story name="WithRadioGroup" asChild>
   <ContextMenu.Root>
     <ContextMenu.Trigger
-      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border text-sm text-caption"
+      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border typo-caption"
     >
       Right-click for layout options
     </ContextMenu.Trigger>
@@ -107,7 +107,7 @@
 <Story name="WithCheckboxGroup" asChild>
   <ContextMenu.Root>
     <ContextMenu.Trigger
-      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border text-sm text-caption"
+      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border typo-caption"
     >
       Right-click for tools
     </ContextMenu.Trigger>
@@ -136,7 +136,7 @@
 <Story name="WithSubMenu" asChild>
   <ContextMenu.Root>
     <ContextMenu.Trigger
-      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border text-sm text-caption"
+      class="flex h-48 w-full items-center justify-center rounded-lg border-2 border-dashed border-border typo-caption"
     >
       Right-click for nested menu
     </ContextMenu.Trigger>

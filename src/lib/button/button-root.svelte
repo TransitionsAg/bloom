@@ -16,9 +16,9 @@
         link: "bg-transparent relative [&::after]:content-[''] [&::after]:absolute [&::after]:left-0 [&::after]:-bottom-1 [&::after]:block [&::after]:h-[2px] [&::after]:w-full [&::after]:bg-current [&::after]:scale-x-0 [&::after]:transition-transform [&::after]:duration-200 [&::after]:origin-center hover:[&::after]:scale-x-100",
       },
       size: {
-        sm: "px-5 py-3 text-sm",
+        sm: "px-5 py-3 text-sm font-semibold",
         md: "px-5 py-3",
-        lg: "px-5 py-3 text-lg",
+        lg: "px-5 py-3 text-lg font-semibold",
         square: "p-2 size-10",
         fit: "",
       },

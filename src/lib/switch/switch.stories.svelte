@@ -44,7 +44,7 @@
     <Switch.Root {id} aria-labelledby={`${id}-label`} {...props}>
       <Switch.Thumb />
     </Switch.Root>
-    <label for={id} class="grid gap-1 text-sm leading-none text-foreground">
+    <label for={id} class="grid gap-1 text-sm font-medium leading-none text-foreground">
       <span id={`${id}-label`} class="font-semibold">{label}</span>
       <span class="text-muted-foreground">{description}</span>
     </label>

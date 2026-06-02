@@ -17,12 +17,12 @@
     </div>
     <div class="grid gap-2 sm:grid-cols-2">
       <div class="rounded border-2 border-border bg-background p-4">
-        <p class="text-sm font-semibold">Plan</p>
-        <p class="text-sm text-muted-foreground">Team workspace</p>
+        <p class="typo-sm">Plan</p>
+        <p class="text-sm font-medium text-muted-foreground">Team workspace</p>
       </div>
       <div class="rounded border-2 border-border bg-background p-4">
-        <p class="text-sm font-semibold">Status</p>
-        <p class="text-sm text-muted-foreground">Active</p>
+        <p class="typo-sm">Status</p>
+        <p class="text-sm font-medium text-muted-foreground">Active</p>
       </div>
     </div>
   </div>
@@ -35,8 +35,8 @@
       <p class="text-muted-foreground">Review invoices, payment methods, and billing contacts.</p>
     </div>
     <div class="rounded border-2 border-border bg-background p-4">
-      <p class="text-sm font-semibold">Next invoice</p>
-      <p class="text-sm text-muted-foreground">June 14, 2026 for $84.00</p>
+      <p class="typo-sm">Next invoice</p>
+      <p class="text-sm font-medium text-muted-foreground">June 14, 2026 for $84.00</p>
     </div>
   </div>
 {/snippet}
@@ -47,7 +47,7 @@
       <h3 class="text-lg font-bold">Team</h3>
       <p class="text-muted-foreground">Invite teammates and tune workspace permissions.</p>
     </div>
-    <ul class="grid gap-2 text-sm text-muted-foreground">
+    <ul class="grid gap-2 text-sm font-medium text-muted-foreground">
       <li class="rounded bg-muted px-3 py-2">3 owners</li>
       <li class="rounded bg-muted px-3 py-2">12 editors</li>
       <li class="rounded bg-muted px-3 py-2">28 viewers</li>

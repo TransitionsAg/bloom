@@ -22,7 +22,7 @@
       <Slider.Range />
       <Slider.Thumb index={0} aria-label="Volume" />
     </Slider.Root>
-    <p class="mt-3 text-sm text-muted-foreground">Volume: {singleValue}</p>
+    <p class="mt-3 text-sm font-medium text-muted-foreground">Volume: {singleValue}</p>
   </div>
 </Story>
 
@@ -36,7 +36,7 @@
         {/each}
       {/snippet}
     </Slider.Root>
-    <p class="mt-3 text-sm text-muted-foreground">Budget: {rangeValue[0]}-{rangeValue[1]}</p>
+    <p class="mt-3 text-sm font-medium text-muted-foreground">Budget: {rangeValue[0]}-{rangeValue[1]}</p>
   </div>
 </Story>
 

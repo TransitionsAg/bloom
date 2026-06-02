@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "flex min-h-10 w-full cursor-pointer select-none items-center gap-3 rounded px-3 py-2 text-sm text-foreground outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:text-disabled-foreground data-[highlighted]:bg-muted data-[highlighted]:text-foreground",
+    base: "flex min-h-10 w-full cursor-pointer select-none items-center gap-3 rounded px-3 py-2 text-sm font-medium text-foreground outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:text-disabled-foreground data-[highlighted]:bg-muted data-[highlighted]:text-foreground",
   })
 
   export type Props = ComponentProps<typeof Combobox.Item>

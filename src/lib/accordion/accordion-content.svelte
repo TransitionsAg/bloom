@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "overflow-hidden text-sm text-muted-foreground tracking-[-0.01em] data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down data-[disabled]:text-disabled-foreground",
+    base: "overflow-hidden text-sm font-medium text-muted-foreground tracking-[-0.01em] data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down data-[disabled]:text-disabled-foreground",
   })
 
   export type Props = ComponentProps<typeof Accordion.Content>

@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "px-4 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground",
+    base: "px-4 py-2 typo-xs uppercase tracking-wide text-muted-foreground",
   })
 
   export type Props = ComponentProps<typeof Menubar.GroupHeading>

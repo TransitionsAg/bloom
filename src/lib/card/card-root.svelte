@@ -6,10 +6,10 @@
     base: "rounded-lg bg-surface text-foreground inset-ring-2 inset-ring-border",
     variants: {
       size: {
-        sm: "text-sm [&_[data-bloom-card-title]]:text-base [&_[data-bloom-card-description]]:text-xs [&_[data-bloom-card-header]]:gap-1 [&_[data-bloom-card-content]]:pt-4 [&_[data-bloom-card-footer]]:pt-4",
+        sm: "text-sm font-medium [&_[data-bloom-card-title]]:text-base [&_[data-bloom-card-description]]:text-xs [&_[data-bloom-card-header]]:gap-1 [&_[data-bloom-card-content]]:pt-4 [&_[data-bloom-card-footer]]:pt-4",
         normal:
-          "text-base [&_[data-bloom-card-title]]:text-lg [&_[data-bloom-card-description]]:text-sm [&_[data-bloom-card-header]]:gap-1.5 [&_[data-bloom-card-content]]:pt-6 [&_[data-bloom-card-footer]]:pt-6",
-        lg: "text-lg [&_[data-bloom-card-title]]:text-xl [&_[data-bloom-card-description]]:text-base [&_[data-bloom-card-header]]:gap-2 [&_[data-bloom-card-content]]:pt-8 [&_[data-bloom-card-footer]]:pt-8",
+          "text-base font-medium [&_[data-bloom-card-title]]:text-lg [&_[data-bloom-card-description]]:text-sm [&_[data-bloom-card-header]]:gap-1.5 [&_[data-bloom-card-content]]:pt-6 [&_[data-bloom-card-footer]]:pt-6",
+        lg: "text-lg font-medium [&_[data-bloom-card-title]]:text-xl [&_[data-bloom-card-description]]:text-base [&_[data-bloom-card-header]]:gap-2 [&_[data-bloom-card-content]]:pt-8 [&_[data-bloom-card-footer]]:pt-8",
       },
       padding: {
         none: "",

@@ -43,12 +43,12 @@
   <div class="max-w-xl rounded-lg border-2 border-border bg-surface p-6 text-foreground">
     <div class="space-y-1">
       <h3 class="text-lg font-semibold tracking-[-0.02em]">Quarterly transition plan</h3>
-      <p class="text-sm text-muted-foreground">
+      <p class="text-sm font-medium text-muted-foreground">
         Separate dense content without adding another container treatment.
       </p>
     </div>
     <Separator.Root class="my-5" />
-    <div class="grid gap-3 text-sm">
+    <div class="grid gap-3 text-sm font-medium">
       <div class="flex items-center justify-between gap-4">
         <span class="font-medium">Baseline assessment</span>
         <span class="text-muted-foreground">Complete</span>
@@ -62,7 +62,7 @@
 </Story>
 
 <Story name="Inline Navigation" asChild>
-  <div class="flex h-8 items-center gap-4 text-sm text-foreground">
+  <div class="flex h-8 items-center gap-4 text-sm font-medium text-foreground">
     <a class="font-medium underline-offset-4 hover:underline" href="/">Overview</a>
     <Separator.Root orientation="vertical" />
     <a class="font-medium underline-offset-4 hover:underline" href="/">Docs</a>

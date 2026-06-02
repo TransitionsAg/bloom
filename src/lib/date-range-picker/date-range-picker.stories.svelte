@@ -98,7 +98,7 @@
 <Story name="Default" asChild>
   <div class="min-h-[34rem] bg-background p-8 text-foreground">
     <div class="max-w-xl rounded-xl border-2 border-border bg-surface p-6">
-      <p class="mb-2 text-sm font-semibold text-caption">Plan an itinerary</p>
+      <p class="mb-2 typo-sm text-caption">Plan an itinerary</p>
       <DateRangePicker.Root weekdayFormat="short" fixedWeeks={true} numberOfMonths={2}>
         <DateRangePicker.Label>Travel window</DateRangePicker.Label>
         {@render DateFields()}

@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "px-3 py-2 text-xs font-semibold uppercase tracking-wide text-caption",
+    base: "px-3 py-2 typo-xs uppercase tracking-wide text-caption",
   })
 
   export type Props = ComponentProps<typeof Combobox.GroupHeading>

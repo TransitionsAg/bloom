@@ -25,7 +25,7 @@
 						{/each}
 					{/snippet}
 				</TimeRangeField.Input>
-				<span class="text-sm text-muted-foreground">to</span>
+				<span class="text-sm font-medium text-muted-foreground">to</span>
 				<TimeRangeField.Input type="end">
 					{#snippet children({ segments })}
 						{#each segments as { part, value }, index (part + index)}
@@ -50,7 +50,7 @@
 						{/each}
 					{/snippet}
 				</TimeRangeField.Input>
-				<span class="text-sm text-muted-foreground">to</span>
+				<span class="text-sm font-medium text-muted-foreground">to</span>
 				<TimeRangeField.Input type="end">
 					{#snippet children({ segments })}
 						{#each segments as { part, value }, index (part + index)}
@@ -75,7 +75,7 @@
 						{/each}
 					{/snippet}
 				</TimeRangeField.Input>
-				<span class="text-sm text-disabled-foreground">to</span>
+				<span class="text-sm font-medium text-disabled-foreground">to</span>
 				<TimeRangeField.Input type="end">
 					{#snippet children({ segments })}
 						{#each segments as { part, value }, index (part + index)}

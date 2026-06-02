@@ -31,7 +31,7 @@
     <DateRangeField.Label>Travel window</DateRangeField.Label>
     <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
       {@render DateSegments("start")}
-      <span class="px-1 text-sm font-semibold text-muted-foreground" aria-hidden="true">to</span>
+      <span class="px-1 typo-sm text-muted-foreground" aria-hidden="true">to</span>
       {@render DateSegments("end")}
     </div>
   </DateRangeField.Root>
@@ -51,7 +51,7 @@
       <DateRangeField.Label>Empty range</DateRangeField.Label>
       <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
         {@render DateSegments("start")}
-        <span class="px-1 text-sm font-semibold text-muted-foreground" aria-hidden="true">to</span>
+        <span class="px-1 typo-sm text-muted-foreground" aria-hidden="true">to</span>
         {@render DateSegments("end")}
       </div>
     </DateRangeField.Root>

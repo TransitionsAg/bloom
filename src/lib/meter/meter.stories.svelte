@@ -36,7 +36,7 @@
 
 {#snippet template(args: MeterStoryArgs)}
   <div class="flex w-full max-w-md flex-col gap-2">
-    <div class="flex items-center justify-between text-sm font-semibold text-foreground">
+    <div class="flex items-center justify-between typo-sm text-foreground">
       <span>Storage used</span>
       <span class="tabular-nums text-muted-foreground">{args.value} / {args.max}</span>
     </div>
@@ -52,7 +52,7 @@
 
 <Story name="Custom Indicator" asChild>
   <div class="flex w-full max-w-md flex-col gap-2">
-    <div class="flex items-center justify-between text-sm font-semibold text-foreground">
+    <div class="flex items-center justify-between typo-sm text-foreground">
       <span>CPU load</span>
       <span class="tabular-nums text-muted-foreground">42%</span>
     </div>

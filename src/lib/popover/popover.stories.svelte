@@ -15,9 +15,9 @@
       <div class="flex flex-col gap-3">
         <div>
           <h3 class="text-lg font-extrabold">Crop settings</h3>
-          <p class="text-sm text-muted-foreground">Tune the export area before continuing.</p>
+          <p class="text-sm font-medium text-muted-foreground">Tune the export area before continuing.</p>
         </div>
-        <div class="grid gap-2 text-sm">
+        <div class="grid gap-2 text-sm font-medium">
           <label class="flex items-center justify-between gap-4">
             <span class="text-muted-foreground">Width</span>
             <input
@@ -62,7 +62,7 @@
       <Popover.Content sideOffset={8}>
         <div class="flex max-w-sm flex-col gap-3">
           <h3 class="text-lg font-extrabold">Deployment window</h3>
-          <p class="text-sm text-muted-foreground">
+          <p class="text-sm font-medium text-muted-foreground">
             This popover includes an overlay while keeping the same Bits UI content props.
           </p>
           <Popover.Close>Close</Popover.Close>
@@ -86,7 +86,7 @@
           </div>
           <div class="flex flex-col gap-1">
             <h3 class="font-extrabold">Bloom System</h3>
-            <p class="text-sm text-muted-foreground">
+            <p class="text-sm font-medium text-muted-foreground">
               Accessible floating content for compact workflows.
             </p>
           </div>

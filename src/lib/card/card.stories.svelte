@@ -30,7 +30,7 @@
 
 <Story name="Content Only" asChild>
   <Card.Root class="max-w-sm">
-    <p class="text-sm text-muted-foreground">
+    <p class="text-sm font-medium text-muted-foreground">
       Cards are plain div wrappers with Bloom surface, spacing, and containment styles.
     </p>
   </Card.Root>

@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "min-w-32 text-center text-sm font-semibold text-foreground",
+    base: "min-w-32 text-center typo-sm text-foreground",
   })
 
   export type Props = ComponentProps<typeof DatePicker.Heading>

@@ -40,7 +40,7 @@
       id="email"
       type="email"
       placeholder="name@example.com"
-      class="h-12 rounded border-2 border-border bg-field px-4 text-sm text-foreground placeholder:text-caption transition-all hover:bg-field-accent focus-visible:border-primary focus-visible:outline-none"
+      class="h-12 rounded border-2 border-border bg-field px-4 text-sm font-medium text-foreground placeholder:text-caption transition-all hover:bg-field-accent focus-visible:border-primary focus-visible:outline-none"
     />
   </div>
 </Story>
@@ -53,5 +53,5 @@
 </Story>
 
 <Story name="Custom Class" asChild>
-  <Label.Root for="company" class="text-lg tracking-[-0.02em]">Company name</Label.Root>
+  <Label.Root for="company" class="text-lg font-semibold tracking-[-0.02em]">Company name</Label.Root>
 </Story>

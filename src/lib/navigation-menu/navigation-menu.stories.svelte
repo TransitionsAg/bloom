@@ -69,7 +69,7 @@
 {#snippet MenuLink(item: NavigationItem)}
   <li>
     <NavigationMenu.Link href={item.href} class="flex w-full flex-col items-start gap-1 rounded p-3 text-left hover:bg-muted">
-      <span class="text-sm font-semibold text-foreground">{item.title}</span>
+      <span class="typo-sm text-foreground">{item.title}</span>
       <span class="text-sm font-medium leading-snug text-muted-foreground">{item.description}</span>
     </NavigationMenu.Link>
   </li>

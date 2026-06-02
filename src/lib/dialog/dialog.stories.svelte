@@ -31,7 +31,7 @@
       </div>
 
       <div class="grid gap-4">
-        <label class="grid gap-2 text-sm font-semibold text-foreground">
+        <label class="grid gap-2 typo-sm text-foreground">
           Email address
           <input
             class="h-12 rounded border-2 border-border bg-field px-4 text-[15px] font-medium text-field-foreground transition-all placeholder:text-caption hover:bg-field-accent focus-visible:border-primary focus-visible:outline-none"
@@ -40,7 +40,7 @@
           />
         </label>
 
-        <label class="grid gap-2 text-sm font-semibold text-foreground">
+        <label class="grid gap-2 typo-sm text-foreground">
           Role
           <select
             class="h-12 rounded border-2 border-border bg-field px-4 text-[15px] font-medium text-field-foreground transition-all hover:bg-field-accent focus-visible:border-primary focus-visible:outline-none"

@@ -47,7 +47,7 @@
     {#each pages as page (page.key)}
       {#if page.type === "ellipsis"}
         <span
-          class="inline-flex size-10 select-none items-center justify-center text-sm font-semibold text-muted-foreground"
+          class="inline-flex size-10 select-none items-center justify-center typo-sm text-muted-foreground"
           >...</span
         >
       {:else}
@@ -83,7 +83,7 @@
           >{@render nextIcon()}</Pagination.NextButton
         >
       </div>
-      <p class="text-sm text-muted-foreground">
+      <p class="text-sm font-medium text-muted-foreground">
         Showing {range.start}-{range.end} of 64
       </p>
     {/snippet}

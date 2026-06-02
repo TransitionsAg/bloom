@@ -19,7 +19,7 @@
       <div class="space-y-4">
         <div>
           <h3 class="text-lg font-semibold tracking-[-0.01em]">Transition log</h3>
-          <p class="mt-1 text-sm text-muted-foreground">
+          <p class="mt-1 text-sm font-medium text-muted-foreground">
             A compact list of activities with native-feeling scroll behavior.
           </p>
         </div>
@@ -27,8 +27,8 @@
         <div class="grid gap-2">
           {#each rows as row, index}
             <div class="rounded border border-border bg-background p-3">
-              <p class="text-sm font-semibold">{row}</p>
-              <p class="mt-1 text-xs text-muted-foreground">
+              <p class="typo-sm">{row}</p>
+              <p class="mt-1 text-xs font-medium text-muted-foreground">
                 Owner {index + 1} updated dependencies and next actions.
               </p>
             </div>
@@ -57,8 +57,8 @@
       <div class="flex w-max gap-3 p-5">
         {#each columns as column}
           <section class="w-48 rounded border border-border bg-background p-4">
-            <h3 class="text-sm font-semibold">{column}</h3>
-            <p class="mt-2 text-sm text-muted-foreground">
+            <h3 class="typo-sm">{column}</h3>
+            <p class="mt-2 text-sm font-medium text-muted-foreground">
               Status, owner, risks, and handoff notes for this transition stage.
             </p>
           </section>
@@ -78,8 +78,8 @@
       <div class="grid w-[640px] grid-cols-3 gap-3 p-5">
         {#each rows.slice(0, 12) as row, index}
           <div class="rounded border border-border bg-background p-3">
-            <p class="text-sm font-semibold">{row}</p>
-            <p class="mt-1 text-xs text-muted-foreground">
+            <p class="typo-sm">{row}</p>
+            <p class="mt-1 text-xs font-medium text-muted-foreground">
               Stage {columns[index % columns.length]} includes long-form notes and dependencies.
             </p>
           </div>

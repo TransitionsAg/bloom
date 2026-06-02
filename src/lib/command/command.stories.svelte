@@ -58,10 +58,10 @@
   <div class="flex w-full max-w-xl flex-col gap-3">
     <div class="flex items-end justify-between gap-4">
       <div>
-        <p class="text-sm font-semibold text-foreground">Command palette</p>
-        <p class="text-sm text-muted-foreground">Search actions, records, and links.</p>
+        <p class="typo-sm text-foreground">Command palette</p>
+        <p class="text-sm font-medium text-muted-foreground">Search actions, records, and links.</p>
       </div>
-      <kbd class="rounded border border-border bg-background px-2 py-1 text-xs text-caption">Ctrl K</kbd>
+      <kbd class="rounded border border-border bg-background px-2 py-1 text-xs font-medium text-caption">Ctrl K</kbd>
     </div>
 
     <Command.Root value="open-board">
@@ -75,12 +75,12 @@
             <Command.GroupItems>
               {#each suggestions as item (item.value)}
                 <Command.Item value={item.value} keywords={item.keywords}>
-                  <span class="flex size-7 items-center justify-center rounded bg-muted text-xs font-semibold text-foreground">
+                  <span class="flex size-7 items-center justify-center rounded bg-muted typo-xs text-foreground">
                     {item.shortcut}
                   </span>
                   <span class="flex min-w-0 flex-1 flex-col">
                     <span class="truncate font-medium">{item.label}</span>
-                    <span class="truncate text-xs text-muted-foreground">{item.detail}</span>
+                    <span class="truncate text-xs font-medium text-muted-foreground">{item.detail}</span>
                   </span>
                 </Command.Item>
               {/each}
@@ -97,7 +97,7 @@
                   <span class="size-2 rounded bg-primary"></span>
                   <span class="flex min-w-0 flex-1 items-center justify-between gap-4">
                     <span class="truncate font-medium">{item.label}</span>
-                    <span class="shrink-0 text-xs text-muted-foreground">{item.detail}</span>
+                    <span class="shrink-0 text-xs font-medium text-muted-foreground">{item.detail}</span>
                   </span>
                 </Command.Item>
               {/each}
@@ -113,14 +113,14 @@
                 <span class="size-2 rounded bg-secondary"></span>
                 <span class="flex flex-1 items-center justify-between gap-4">
                   <span class="font-medium">Open documentation</span>
-                  <span class="text-xs text-muted-foreground">Link</span>
+                  <span class="text-xs font-medium text-muted-foreground">Link</span>
                 </span>
               </Command.LinkItem>
               <Command.Item value="archive" disabled>
                 <span class="size-2 rounded bg-disabled"></span>
                 <span class="flex flex-1 items-center justify-between gap-4">
                   <span class="font-medium">Archive workspace</span>
-                  <span class="text-xs text-muted-foreground">Disabled</span>
+                  <span class="text-xs font-medium text-muted-foreground">Disabled</span>
                 </span>
               </Command.Item>
             </Command.GroupItems>

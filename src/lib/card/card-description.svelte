@@ -3,7 +3,7 @@
   import type { HTMLAttributes } from "svelte/elements"
 
   export const variants = cva({
-    base: "text-sm text-muted-foreground",
+    base: "typo-sm text-muted-foreground",
   })
 
   export type Props = HTMLAttributes<HTMLDivElement>

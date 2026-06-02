@@ -61,7 +61,7 @@
 
 <Story name="Sizes" asChild>
   <div class="flex items-center gap-4">
-    <Avatar.Root class="size-8 text-xs">
+    <Avatar.Root class="size-8 text-xs font-semibold">
       <Avatar.Image src={adaAvatar} alt="Ada Lovelace avatar" />
       <Avatar.Fallback>AL</Avatar.Fallback>
     </Avatar.Root>
@@ -69,7 +69,7 @@
       <Avatar.Image src={adaAvatar} alt="Ada Lovelace avatar" />
       <Avatar.Fallback>AL</Avatar.Fallback>
     </Avatar.Root>
-    <Avatar.Root class="size-14 text-base">
+    <Avatar.Root class="size-14 text-base font-semibold">
       <Avatar.Image src={adaAvatar} alt="Ada Lovelace avatar" />
       <Avatar.Fallback>AL</Avatar.Fallback>
     </Avatar.Root>

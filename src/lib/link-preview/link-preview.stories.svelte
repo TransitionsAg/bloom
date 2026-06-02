@@ -17,11 +17,11 @@
     <div class="min-w-0 space-y-2">
       <div>
         <h3 class="text-sm font-extrabold tracking-[-0.02em] text-foreground">Bloom changelog</h3>
-        <p class="text-sm leading-6 text-muted-foreground">
+        <p class="text-sm font-medium leading-6 text-muted-foreground">
           New primitives, sharper theme defaults, and examples for building interfaces with Bits UI.
         </p>
       </div>
-      <div class="flex flex-wrap gap-2 text-xs font-semibold text-muted-foreground">
+      <div class="flex flex-wrap gap-2 typo-xs text-muted-foreground">
         <span class="rounded bg-muted px-2 py-1">Design system</span>
         <span class="rounded bg-muted px-2 py-1">Updated today</span>
       </div>
@@ -30,7 +30,7 @@
 {/snippet}
 
 <Story name="Default" asChild>
-  <div class="max-w-2xl text-sm leading-7 text-foreground">
+  <div class="max-w-2xl text-sm font-medium leading-7 text-foreground">
     Read the latest
     <LinkPreview.Root>
       <LinkPreview.Trigger href="https://transitions.ag" target="_blank" rel="noreferrer noopener">
@@ -46,7 +46,7 @@
 </Story>
 
 <Story name="Custom Content" asChild>
-  <div class="flex flex-col gap-6 text-sm text-foreground">
+  <div class="flex flex-col gap-6 text-sm font-medium text-foreground">
     <p class="max-w-xl leading-7">
       Hover the
       <LinkPreview.Root openDelay={150} closeDelay={150}>
@@ -63,7 +63,7 @@
             </div>
             <div>
               <h3 class="text-sm font-extrabold tracking-[-0.02em]">Transition guide</h3>
-              <p class="mt-1 text-sm leading-6 text-muted-foreground">
+              <p class="mt-1 text-sm font-medium leading-6 text-muted-foreground">
                 Practical notes for mapping interaction states to Bloom primitives.
               </p>
             </div>

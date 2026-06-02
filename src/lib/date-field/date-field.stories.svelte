@@ -53,7 +53,7 @@
       <div class="flex flex-col gap-2">
         <DateField.Label>Invalid date</DateField.Label>
         {@render DateFieldInput("invalid-date")}
-        <p class="text-sm text-caption">Must be today or later.</p>
+        <p class="typo-caption">Must be today or later.</p>
       </div>
     </DateField.Root>
 
@@ -61,7 +61,7 @@
       <div class="flex flex-col gap-2">
         <DateField.Label>Disabled date</DateField.Label>
         {@render DateFieldInput("disabled-date")}
-        <p class="text-sm text-caption">Unavailable until scheduling opens.</p>
+        <p class="typo-caption">Unavailable until scheduling opens.</p>
       </div>
     </DateField.Root>
   </div>

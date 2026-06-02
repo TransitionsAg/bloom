@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "relative inline-flex size-10 shrink-0 overflow-hidden rounded-full border-2 border-border bg-muted align-middle text-sm font-semibold text-foreground transition-colors data-[status=loaded]:bg-transparent data-[status=loading]:border-transparent",
+    base: "relative inline-flex size-10 shrink-0 overflow-hidden rounded-full border-2 border-border bg-muted align-middle typo-sm text-foreground transition-colors data-[status=loaded]:bg-transparent data-[status=loading]:border-transparent",
   })
 
   export type Props = ComponentProps<typeof Avatar.Root>

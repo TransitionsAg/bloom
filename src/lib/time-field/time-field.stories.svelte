@@ -53,7 +53,7 @@
       <div class="flex flex-col gap-2">
         <TimeField.Label>Invalid time</TimeField.Label>
         {@render TimeFieldInput("invalid-time")}
-        <p class="text-sm text-caption">Must be 9:00 AM or later.</p>
+        <p class="typo-caption">Must be 9:00 AM or later.</p>
       </div>
     </TimeField.Root>
 
@@ -61,7 +61,7 @@
       <div class="flex flex-col gap-2">
         <TimeField.Label>Disabled time</TimeField.Label>
         {@render TimeFieldInput("disabled-time")}
-        <p class="text-sm text-caption">Unavailable until scheduling opens.</p>
+        <p class="typo-caption">Unavailable until scheduling opens.</p>
       </div>
     </TimeField.Root>
   </div>

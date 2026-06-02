@@ -41,7 +41,7 @@
           <span class="size-2 rounded-full bg-primary-foreground"></span>
         {/if}
       </span>
-      <div class="grid gap-1 text-sm leading-none">
+      <div class="grid gap-1 text-sm font-medium leading-none">
         <span class="font-semibold text-foreground">{label}</span>
         <span class="text-muted-foreground">{description}</span>
       </div>
@@ -62,7 +62,7 @@
     {#each options as item (item.value)}
       <div class="flex items-center gap-3">
         <RadioGroup.Item id={`horizontal-${item.value}`} value={item.value} />
-        <Label.Root for={`horizontal-${item.value}`} class="text-sm font-semibold text-foreground">
+        <Label.Root for={`horizontal-${item.value}`} class="typo-sm text-foreground">
           {item.label}
         </Label.Root>
       </div>
@@ -96,7 +96,7 @@
           {/if}
         {/snippet}
       </RadioGroup.Item>
-      <Label.Root for="radio-custom" class="text-sm font-semibold text-foreground">
+      <Label.Root for="radio-custom" class="typo-sm text-foreground">
         Use a custom inline SVG indicator
       </Label.Root>
     </div>

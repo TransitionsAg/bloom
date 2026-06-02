@@ -139,7 +139,7 @@
                 {/each}
               </Combobox.Group>
             {:else}
-              <span class="block px-3 py-4 text-sm text-caption">No results found.</span>
+              <span class="block px-3 py-4 typo-caption">No results found.</span>
             {/each}
           </Combobox.Viewport>
           <Combobox.ScrollDownButton>

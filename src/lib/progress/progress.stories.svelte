@@ -51,7 +51,7 @@
 
 <Story name="Labeled" asChild>
   <div class="flex w-full max-w-xl flex-col gap-3">
-    <div class="flex items-center justify-between text-sm font-semibold text-foreground">
+    <div class="flex items-center justify-between typo-sm text-foreground">
       <span id="progress-upload-label">Uploading archive</span>
       <span class="tabular-nums text-muted-foreground">42%</span>
     </div>

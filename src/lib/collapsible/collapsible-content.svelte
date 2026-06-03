@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "grid grid-rows-[0fr] overflow-hidden border-border text-sm font-medium text-muted-foreground opacity-0 transition-[grid-template-rows,opacity] duration-200 ease-out data-[disabled]:border-disabled-border data-[disabled]:text-disabled-foreground [[data-variant=transparent]_&]:border-t [[data-variant=transparent]_&]:border-border [&:not([hidden]):not([data-state=closed])]:grid-rows-[1fr] [&:not([hidden]):not([data-state=closed])]:border-t-2 [&:not([hidden]):not([data-state=closed])]:opacity-100 [&>div]:min-h-0 [&>div]:overflow-hidden",
+    base: "overflow-hidden border-border text-sm font-medium text-muted-foreground data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down data-[disabled]:border-disabled-border data-[disabled]:text-disabled-foreground [[data-variant=transparent]_&]:border-t [[data-variant=transparent]_&]:border-border [&:not([hidden]):not([data-state=closed])]:border-t-2",
   })
 
   export type Props = ComponentProps<typeof Collapsible.Content>

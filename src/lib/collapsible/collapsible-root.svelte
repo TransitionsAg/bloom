@@ -8,7 +8,7 @@
     variants: {
       variant: {
         default:
-          "bg-surface inset-ring-2 inset-ring-border data-[disabled]:bg-disabled data-[disabled]:inset-ring-disabled-border",
+          "border-2 border-border bg-surface data-[disabled]:border-disabled-border data-[disabled]:bg-disabled",
         transparent: "bg-transparent",
       },
     },

@@ -76,7 +76,7 @@
 {/snippet}
 
 <Story name="Default" asChild>
-  <div class="flex min-h-72 w-full justify-center p-6">
+  <div class="flex min-h-72 w-full items-start justify-center p-6">
     <NavigationMenu.Root class="w-full max-w-4xl justify-center">
       <NavigationMenu.List>
         <NavigationMenu.Item value="products">
@@ -130,7 +130,7 @@
         <NavigationMenu.Indicator />
       </NavigationMenu.List>
 
-      <div class="absolute left-0 top-full flex w-full justify-center">
+      <div class="absolute left-0 top-full flex w-full justify-center perspective-[2000px]">
         <NavigationMenu.Viewport />
       </div>
     </NavigationMenu.Root>

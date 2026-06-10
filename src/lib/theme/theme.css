@@ -10,6 +10,12 @@
   --animate-dialog-content-out: dialog-content-out 0.15s ease-in;
   --animate-dialog-overlay-in: dialog-overlay-in 0.2s ease-out;
   --animate-dialog-overlay-out: dialog-overlay-out 0.15s ease-in;
+  --animate-nav-menu-enter-from-left: nav-menu-enter-from-left 0.2s ease;
+  --animate-nav-menu-enter-from-right: nav-menu-enter-from-right 0.2s ease;
+  --animate-nav-menu-exit-to-left: nav-menu-exit-to-left 0.2s ease;
+  --animate-nav-menu-exit-to-right: nav-menu-exit-to-right 0.2s ease;
+  --animate-nav-menu-scale-in: nav-menu-scale-in 0.2s ease;
+  --animate-nav-menu-scale-out: nav-menu-scale-out 0.15s ease;
 
   --color-background: #fbfbfe;
   --color-foreground: #222222;
@@ -123,6 +129,72 @@
     to {
       opacity: 0;
       transform: translate(-50%, -48%) scale(0.96);
+    }
+  }
+
+  @keyframes nav-menu-enter-from-left {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes nav-menu-enter-from-right {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes nav-menu-exit-to-left {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+  }
+
+  @keyframes nav-menu-exit-to-right {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+  }
+
+  @keyframes nav-menu-scale-in {
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+  }
+
+  @keyframes nav-menu-scale-out {
+    from {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: rotateX(-10deg) scale(0.95);
     }
   }
 }

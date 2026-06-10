@@ -4,7 +4,7 @@
   import type { ComponentProps } from "svelte"
 
   export const variants = cva({
-    base: "absolute left-0 top-0 w-full outline-none transition-[opacity,transform] duration-200 data-[motion=from-end]:translate-x-4 data-[motion=from-start]:-translate-x-4 data-[motion=to-end]:translate-x-4 data-[motion=to-start]:-translate-x-4 data-[state=closed]:pointer-events-none data-[state=closed]:opacity-0 data-[state=open]:translate-x-0 data-[state=open]:opacity-100 sm:w-auto",
+    base: "absolute left-0 top-0 w-full outline-none data-[motion=from-end]:animate-nav-menu-enter-from-right data-[motion=from-start]:animate-nav-menu-enter-from-left data-[motion=to-end]:animate-nav-menu-exit-to-right data-[motion=to-start]:animate-nav-menu-exit-to-left sm:w-auto",
   })
 
   export type Props = ComponentProps<typeof NavigationMenu.Content>

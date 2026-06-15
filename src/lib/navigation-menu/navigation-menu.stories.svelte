@@ -127,6 +127,10 @@
           <NavigationMenu.Link href="/pricing" class="h-10 px-4 py-2">Pricing</NavigationMenu.Link>
         </NavigationMenu.Item>
 
+        <NavigationMenu.Item>
+          <NavigationMenu.Button onclick={() => alert("Contact clicked")}>Contact</NavigationMenu.Button>
+        </NavigationMenu.Item>
+
         <NavigationMenu.Indicator />
       </NavigationMenu.List>
 

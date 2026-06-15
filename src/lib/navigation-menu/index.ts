@@ -1,3 +1,4 @@
+import Button from "./navigation-menu-button.svelte"
 import Content from "./navigation-menu-content.svelte"
 import Indicator from "./navigation-menu-indicator.svelte"
 import Item from "./navigation-menu-item.svelte"
@@ -10,6 +11,7 @@ import Viewport from "./navigation-menu-viewport.svelte"
 
 const NavigationMenu = Object.assign(Root, {
   Root,
+  Button,
   Content,
   Indicator,
   Item,
@@ -22,6 +24,7 @@ const NavigationMenu = Object.assign(Root, {
 
 export {
   NavigationMenu,
+  Button,
   Content,
   Indicator,
   Item,

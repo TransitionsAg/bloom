@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  let { pressed = $bindable(), class: className, ...restProps }: Props = $props()
+  let { pressed = $bindable(false), class: className, ...restProps }: Props = $props()
 </script>
 
 <Toggle.Root bind:pressed {...restProps} class={variants({ class: className })} />

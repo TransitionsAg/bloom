@@ -6,7 +6,7 @@
 </script>
 
 <script lang="ts">
-  let { value = $bindable(), placeholder = $bindable(), open = $bindable(), ...restProps }: Props = $props()
+  let { value = $bindable(), placeholder = $bindable(), open = $bindable(false), ...restProps }: Props = $props()
 </script>
 
 <DatePicker.Root bind:value bind:placeholder bind:open {...restProps} />

@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  let { value = $bindable(), disabled, class: className, ...restProps }: Props = $props()
+  let { value = $bindable(""), disabled, class: className, ...restProps }: Props = $props()
 </script>
 
 <Tabs.Root

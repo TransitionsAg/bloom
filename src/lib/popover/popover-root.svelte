@@ -6,7 +6,7 @@
 </script>
 
 <script lang="ts">
-  let { open = $bindable(), ...restProps }: Props = $props()
+  let { open = $bindable(false), ...restProps }: Props = $props()
 </script>
 
 <Popover.Root bind:open {...restProps} />

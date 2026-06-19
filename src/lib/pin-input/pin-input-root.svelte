@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  let { value = $bindable(), class: className, ...restProps }: Props = $props()
+  let { value = $bindable(""), class: className, ...restProps }: Props = $props()
 </script>
 
 <PinInput.Root bind:value {...restProps} class={variants({ class: className })} />

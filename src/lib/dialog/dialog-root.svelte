@@ -10,7 +10,7 @@
   // a plain `{...restProps}` spread only passes values down, so bits-ui's
   // internal close never propagates back to a consumer's `bind:open`, leaving
   // their state stuck `true` (the dialog then only ever opens once).
-  let { open = $bindable(), ...restProps }: Props = $props()
+  let { open = $bindable(false), ...restProps }: Props = $props()
 </script>
 
 <Dialog.Root bind:open {...restProps} />

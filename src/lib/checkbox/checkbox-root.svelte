@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  let { checked = $bindable(), indeterminate = $bindable(), class: className, child, children: childContent, ...restProps }: Props = $props()
+  let { checked = $bindable(false), indeterminate = $bindable(false), class: className, child, children: childContent, ...restProps }: Props = $props()
 </script>
 
 {#if child}

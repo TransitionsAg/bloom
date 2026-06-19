@@ -21,7 +21,7 @@
 </script>
 
 <script lang="ts">
-  let { open = $bindable(), variant, disabled, class: className, ...restProps }: Props = $props()
+  let { open = $bindable(false), variant, disabled, class: className, ...restProps }: Props = $props()
 </script>
 
 <Collapsible.Root

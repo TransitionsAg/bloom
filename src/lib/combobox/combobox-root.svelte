@@ -6,7 +6,7 @@
 </script>
 
 <script lang="ts">
-  const { ...restProps }: Props = $props()
+  let { value = $bindable(), open = $bindable(), ...restProps }: Props = $props()
 </script>
 
-<Combobox.Root {...restProps} />
+<Combobox.Root bind:value={value as never} bind:open {...restProps} />

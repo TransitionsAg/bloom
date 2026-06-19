@@ -14,4 +14,4 @@
   let { value = $bindable(), ref = $bindable(null), class: className, ...restProps }: Props = $props()
 </script>
 
-<Slider.Root bind:value bind:ref {...restProps as any} class={variants({ class: className })} />
+<Slider.Root bind:value={value as never} bind:ref {...restProps} class={variants({ class: className })} />

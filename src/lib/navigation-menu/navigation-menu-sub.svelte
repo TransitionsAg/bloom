@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  const { class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), class: className, ...restProps }: Props = $props()
 </script>
 
-<NavigationMenu.Sub {...restProps} class={variants({ class: className })} />
+<NavigationMenu.Sub bind:value {...restProps} class={variants({ class: className })} />

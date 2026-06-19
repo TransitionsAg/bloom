@@ -21,10 +21,11 @@
 </script>
 
 <script lang="ts">
-  const { variant, disabled, class: className, ...restProps }: Props = $props()
+  let { open = $bindable(), variant, disabled, class: className, ...restProps }: Props = $props()
 </script>
 
 <Collapsible.Root
+  bind:open
   {...restProps}
   {disabled}
   data-disabled={disabled ? "" : undefined}

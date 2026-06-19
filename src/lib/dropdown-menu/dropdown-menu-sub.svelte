@@ -6,7 +6,7 @@
 </script>
 
 <script lang="ts">
-  const { ...restProps }: Props = $props()
+  let { open = $bindable(), ...restProps }: Props = $props()
 </script>
 
-<DropdownMenu.Sub {...restProps} />
+<DropdownMenu.Sub bind:open {...restProps} />

@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  const { class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), placeholder = $bindable(), class: className, ...restProps }: Props = $props()
 </script>
 
-<RangeCalendar.Root {...restProps} class={variants({ class: className })} />
+<RangeCalendar.Root bind:value bind:placeholder {...restProps} class={variants({ class: className })} />

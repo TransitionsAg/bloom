@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  const { class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), placeholder = $bindable(), open = $bindable(), class: className, ...restProps }: Props = $props()
 </script>
 
-<DateRangePicker.Root {...restProps} class={variants({ class: className })} />
+<DateRangePicker.Root bind:value bind:placeholder bind:open {...restProps} class={variants({ class: className })} />

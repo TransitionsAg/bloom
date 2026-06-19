@@ -11,13 +11,13 @@
 </script>
 
 <script lang="ts">
-  const { class: className, child, children: childContent, ...restProps }: Props = $props()
+  let { checked = $bindable(), indeterminate = $bindable(), class: className, child, children: childContent, ...restProps }: Props = $props()
 </script>
 
 {#if child}
-  <Checkbox.Root {...restProps} {child} class={variants({ class: className })} />
+  <Checkbox.Root bind:checked bind:indeterminate {...restProps} {child} class={variants({ class: className })} />
 {:else}
-  <Checkbox.Root {...restProps} class={variants({ class: className })}>
+  <Checkbox.Root bind:checked bind:indeterminate {...restProps} class={variants({ class: className })}>
     {#snippet children({ checked, indeterminate })}
       {#if childContent}
         {@render childContent({ checked, indeterminate })}

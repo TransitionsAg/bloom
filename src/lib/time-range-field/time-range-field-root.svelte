@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-	const { class: className, ...restProps }: Props = $props();
+	let { value = $bindable(), placeholder = $bindable(), class: className, ...restProps }: Props = $props();
 </script>
 
-<TimeRangeField.Root {...restProps} class={variants({ class: className })} />
+<TimeRangeField.Root bind:value bind:placeholder {...restProps} class={variants({ class: className })} />

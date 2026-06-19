@@ -11,10 +11,11 @@
 </script>
 
 <script lang="ts">
-  const { disabled, class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), disabled, class: className, ...restProps }: Props = $props()
 </script>
 
 <Tabs.Root
+  bind:value
   {...restProps}
   {disabled}
   data-disabled={disabled ? "" : undefined}

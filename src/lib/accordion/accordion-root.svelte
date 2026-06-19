@@ -21,10 +21,11 @@
 </script>
 
 <script lang="ts">
-  const { variant, disabled, class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), variant, disabled, class: className, ...restProps }: Props = $props()
 </script>
 
 <Accordion.Root
+  bind:value={value as never}
   {...restProps}
   {disabled}
   data-disabled={disabled ? "" : undefined}

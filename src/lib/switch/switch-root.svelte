@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  const { class: className, ...restProps }: Props = $props()
+  let { checked = $bindable(), class: className, ...restProps }: Props = $props()
 </script>
 
-<Switch.Root {...restProps} class={variants({ class: className })} />
+<Switch.Root bind:checked {...restProps} class={variants({ class: className })} />

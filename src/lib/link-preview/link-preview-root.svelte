@@ -6,7 +6,7 @@
 </script>
 
 <script lang="ts">
-  const { ...restProps }: Props = $props()
+  let { open = $bindable(), ...restProps }: Props = $props()
 </script>
 
-<LinkPreview.Root {...restProps} />
+<LinkPreview.Root bind:open {...restProps} />

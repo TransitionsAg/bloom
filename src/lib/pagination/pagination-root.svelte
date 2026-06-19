@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  const { class: className, page, ...restProps }: Props = $props()
+  let { class: className, page = $bindable(), ...restProps }: Props = $props()
 </script>
 
-<Pagination.Root {page} {...restProps} class={variants({ class: className })} />
+<Pagination.Root bind:page {...restProps} class={variants({ class: className })} />

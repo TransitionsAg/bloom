@@ -6,7 +6,7 @@
 </script>
 
 <script lang="ts">
-  const { ...restProps }: Props = $props()
+  let { value = $bindable(), open = $bindable(), ...restProps }: Props = $props()
 </script>
 
-<Select.Root {...restProps} />
+<Select.Root bind:open bind:value={value as never} {...restProps} />

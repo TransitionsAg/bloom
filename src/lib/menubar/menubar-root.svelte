@@ -11,7 +11,7 @@
 </script>
 
 <script lang="ts">
-  const { class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), class: className, ...restProps }: Props = $props()
 </script>
 
-<Menubar.Root {...restProps} class={variants({ class: className })} />
+<Menubar.Root bind:value {...restProps} class={variants({ class: className })} />

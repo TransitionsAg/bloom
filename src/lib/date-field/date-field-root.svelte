@@ -6,7 +6,7 @@
 </script>
 
 <script lang="ts">
-  const { ...restProps }: Props = $props()
+  let { value = $bindable(), placeholder = $bindable(), ...restProps }: Props = $props()
 </script>
 
-<DateField.Root {...restProps} />
+<DateField.Root bind:value bind:placeholder {...restProps} />

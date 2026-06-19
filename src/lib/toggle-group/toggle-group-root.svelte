@@ -11,10 +11,11 @@
 </script>
 
 <script lang="ts">
-  const { disabled, class: className, ...restProps }: Props = $props()
+  let { value = $bindable(), disabled, class: className, ...restProps }: Props = $props()
 </script>
 
 <ToggleGroup.Root
+  bind:value={value as never}
   {...restProps}
   {disabled}
   data-disabled={disabled ? "" : undefined}

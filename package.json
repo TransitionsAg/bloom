@@ -70,6 +70,7 @@
 		"./menubar": "./dist/menubar/index.js",
 		"./meter": "./dist/meter/index.js",
 		"./navigation-menu": "./dist/navigation-menu/index.js",
+		"./notion-input": "./dist/notion-input/index.js",
 		"./pagination": "./dist/pagination/index.js",
 		"./pin-input": "./dist/pin-input/index.js",
 		"./popover": "./dist/popover/index.js",
@@ -78,6 +79,7 @@
 		"./radio-group": "./dist/radio-group/index.js",
 		"./range-calendar": "./dist/range-calendar/index.js",
 		"./rating-group": "./dist/rating-group/index.js",
+		"./rich-text-input": "./dist/rich-text-input/index.js",
 		"./scroll-area": "./dist/scroll-area/index.js",
 		"./select": "./dist/select/index.js",
 		"./separator": "./dist/separator/index.js",
@@ -94,10 +96,41 @@
 		"./theme.css": "./dist/theme/theme.css"
 	},
 	"peerDependencies": {
+		"@floating-ui/dom": "^1.0.0",
+		"@tiptap/core": "^3.0.0",
+		"@tiptap/extension-bubble-menu": "^3.0.0",
+		"@tiptap/extensions": "^3.0.0",
+		"@tiptap/pm": "^3.0.0",
+		"@tiptap/starter-kit": "^3.0.0",
+		"@tiptap/suggestion": "^3.0.0",
 		"svelte": "^5.0.0"
+	},
+	"peerDependenciesMeta": {
+		"@floating-ui/dom": {
+			"optional": true
+		},
+		"@tiptap/core": {
+			"optional": true
+		},
+		"@tiptap/extension-bubble-menu": {
+			"optional": true
+		},
+		"@tiptap/extensions": {
+			"optional": true
+		},
+		"@tiptap/pm": {
+			"optional": true
+		},
+		"@tiptap/starter-kit": {
+			"optional": true
+		},
+		"@tiptap/suggestion": {
+			"optional": true
+		}
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "^5.2.1",
+		"@floating-ui/dom": "^1.7.6",
 		"@storybook/addon-a11y": "^10.4.1",
 		"@storybook/addon-docs": "^10.4.1",
 		"@storybook/addon-svelte-csf": "^5.1.2",
@@ -108,6 +141,12 @@
 		"@sveltejs/package": "^2.5.7",
 		"@sveltejs/vite-plugin-svelte": "^7.0.0",
 		"@tailwindcss/vite": "^4.2.2",
+		"@tiptap/core": "^3.27.0",
+		"@tiptap/extension-bubble-menu": "^3.27.0",
+		"@tiptap/extensions": "^3.27.0",
+		"@tiptap/pm": "^3.27.0",
+		"@tiptap/starter-kit": "^3.27.0",
+		"@tiptap/suggestion": "^3.27.0",
 		"@types/node": "^25.9.1",
 		"@vitest/browser-playwright": "^4.1.3",
 		"@vitest/coverage-v8": "^4.1.3",
